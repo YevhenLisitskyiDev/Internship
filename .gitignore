@@ -101,4 +101,11 @@ transformer_output/
 
 # Ignore experiment results
 *.csv
-*.pkl 
+*.pkl
+
+# Allow the main COVID data CSV to be tracked
+!data/WHO-COVID-19-global-data.csv
+
+# ---
+# NOTE: The data directory is tracked for versioning. If you have large files, consider using Git LFS or add specific patterns to ignore them.
+# data/ is NOT ignored, so data files will be included in commits. 
